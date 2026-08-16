@@ -72,9 +72,9 @@ DROP TABLE IF EXISTS bronze.erp_CUST_AZ12;
 GO
 
 CREATE TABLE bronze.erp_CUST_AZ12 (
-    CID   NVARCHAR(50),
-    BDATE DATE,
-    GEN   NVARCHAR(50)
+    cid   NVARCHAR(50),
+    bdate DATE,
+    gen   NVARCHAR(50)
 );
 GO
 
