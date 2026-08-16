@@ -220,8 +220,8 @@ BEGIN
             END AS bdate,
 
             CASE
-                WHEN UPPER(TRIM(gen)) = 'F' THEN 'Female'
-                WHEN UPPER(TRIM(gen)) = 'M' THEN 'Male'
+                WHEN UPPER(TRIM(gen)) IN ( 'F', 'Female') THEN 'Female'
+                WHEN UPPER(TRIM(gen)) IN ( 'M', 'Male')   THEN 'Male'
                 ELSE 'n/a'
             END AS gen
 
